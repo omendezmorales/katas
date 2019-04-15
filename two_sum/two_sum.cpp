@@ -1,6 +1,23 @@
 #include <unordered_map>
+#include <iostream>
 
 using std::unordered_map;
+using std::cout;
+
+void call_emplace() {
+  unordered_map<int, int> mp;
+
+  // insert elements in random order
+  mp.emplace(2, 30);
+  mp.emplace(1, 40);
+  mp.emplace(2, 20);
+  mp.emplace(1, 50);
+  mp.emplace(4, 50);
+
+  // prints the elements
+  for (auto it = mp.begin(); it != mp.end(); it++)
+    cout << it->first << "==>>" << it->second << "\n";
+}
 
 int array_size(int array[]) {
   int size = 0;

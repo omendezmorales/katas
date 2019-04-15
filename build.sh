@@ -1,2 +1,3 @@
+#!/bin/bash
 FOLDER=$1
 make SRC_PATH="./$FOLDER" BIN_NAME="$FOLDER" BIN_PATH="$FOLDER/bin" BUILD_PATH="$FOLDER/build"

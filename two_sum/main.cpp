@@ -2,7 +2,9 @@
 #include <iostream>
 #include "two_sum.hpp"
 
+
 using std::cout;
+
 
 int main() {
   int target = 17;
@@ -12,5 +14,9 @@ int main() {
   cout << "Two numbers from input array that add to " << target << " are: \n";
   cout << "First number: " << array[indexes[0]];
   cout << "\n";
-  cout << "Second number: " << array[indexes[1]];
+  cout << "Second number: " << array[indexes[1]] << "\n";
+  cout << "now invoking emplace: \n" ;
+  call_emplace();
+
 }
+
